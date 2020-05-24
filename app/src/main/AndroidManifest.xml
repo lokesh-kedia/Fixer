@@ -29,16 +29,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5314021439844328~8679195677" />
-        <meta-data
-            android:name="com.google.android.geo.api_key"
-            android:value="AIzaSyB28e5JSfMvPD21e7S8Z-Q9KuNZdB8chME" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB28e5JSfMvPD21e7S8Z-Q9KuNZdB8chME" />
-
+   
         <activity
             android:name=".Profile"
             android:label="@string/title_activity_profile" />

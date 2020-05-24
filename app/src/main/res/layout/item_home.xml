@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:id="@+id/item_home"
+    >
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/header"
+        android:id="@+id/homeimage"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:textColor="#fff"
+        android:text="Date"
+        android:id="@+id/date_owner"
+        android:textAlignment="center"
+        android:padding="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/com_facebook_blue"
+        android:textSize="15dp"
+        android:text="3000 | 2 BHK"
+        android:id="@+id/price_bhk"
+        android:layout_margin="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Now"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/call"
+        android:textAlignment="center"
+        android:textColor="#8080"
+        android:textSize="18dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        />
+
+</LinearLayout>

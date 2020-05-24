@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/photoImageView"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        app:civ_border_width="2dp"
+        android:src="@mipmap/profile"
+        app:civ_border_color="#fff"
+        android:layout_margin="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photoImageView"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:text="Lokesh Kedia"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastmsg"
+            android:layout_marginLeft="8dp"
+            android:text="lastmsg"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16/09/2018"
+        android:id="@+id/date"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:id="@+id/time"
+        android:text="01:07 PM"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/photoImageView"/>
+
+</RelativeLayout>

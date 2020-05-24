@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@mipmap/icon"
+        android:enabled="true"
+        android:title="Home" />
+    <item
+        android:id="@+id/Search"
+        android:icon="@mipmap/search"
+        android:enabled="true"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/Plus"
+        android:icon="@mipmap/add"
+        android:enabled="true"
+        android:title="Plus" />
+    <item
+        android:id="@+id/Heart"
+        android:enabled="true"
+        android:icon="@mipmap/like"
+        android:title="Heart" />
+    <item
+        android:id="@+id/Profile"
+        android:icon="@mipmap/user"
+        android:enabled="true"
+        android:title="Profile" />
+
+</menu>

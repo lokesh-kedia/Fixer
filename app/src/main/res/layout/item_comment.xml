@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ownerimg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:src="@mipmap/profile"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/Uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/ownerimg"
+        android:text="lokesh1agarwal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtcmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/Uname"
+        android:text="y accha hai"
+        android:textColor="#000" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Uname"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/ownerimg"
+        android:id="@+id/txtTime"
+        android:text="Time" />
+
+</RelativeLayout>

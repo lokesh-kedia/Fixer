@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/unamemap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="lokesh1agarwal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/mapadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="address"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/like"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/likee" />
+
+        <TextView
+            android:id="@+id/likesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="bottom"
+            android:text="1,15,943 likes"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/dislike"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/dislike" />
+
+        <TextView
+            android:id="@+id/dislikesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="bottom"
+            android:text="1,15,943 dislikes"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/comment"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/chat" />
+
+        <ImageButton
+            android:id="@+id/share"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/share" />
+    </LinearLayout>
+
+
+</LinearLayout>

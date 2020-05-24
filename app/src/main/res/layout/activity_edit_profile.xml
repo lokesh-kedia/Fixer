@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/camimg"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:onClick="cut"
+            android:src="@mipmap/multiply" />
+
+        <TextView
+            android:id="@+id/Appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:layout_toEndOf="@id/camimg"
+            android:text="Edit Profile"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/send"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:onClick="savechage"
+            android:src="@mipmap/tick" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/appbar"
+        android:background="#808080" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ip"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:src="@mipmap/profile"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="Change Photo"
+                android:onClick="chooseImage"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#FF3896EE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="Name"
+                android:id="@+id/name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Username"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="Username"
+                android:id="@+id/username"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Website"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="Website"
+                android:id="@+id/website"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Bio"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="Bio"
+                android:id="@+id/bio"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Email address"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="Email address"
+                android:id="@+id/email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Phone number"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:hint="Phone number"
+                android:id="@+id/phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Gender"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="Gender"
+                android:id="@+id/gender"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

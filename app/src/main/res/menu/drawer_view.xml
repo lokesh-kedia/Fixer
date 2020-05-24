@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@mipmap/dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/prefer"
+            android:icon="@mipmap/preferenses"
+            android:title="My preferences"
+            />
+        <item
+            android:id="@+id/shortlists"
+            android:icon="@mipmap/shortlists"
+            android:title="My shortlists" />
+        <item
+            android:id="@+id/HaveHome"
+            android:icon="@mipmap/havehome"
+            android:title="Have Home" />
+        <item
+            android:id="@+id/NeedHome"
+            android:icon="@mipmap/needhome"
+            android:title="Need Home" />
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/info"
+            android:title="About us" />
+        <item
+            android:id="@+id/upload"
+            android:icon="@mipmap/plot"
+            android:title="My Houses" />
+    </group>
+
+</menu>

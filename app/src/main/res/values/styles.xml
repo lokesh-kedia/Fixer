@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorButtonNormal">@drawable/button_selector</item>
+        <item name="colorButtonNormal">@drawable/button_selector</item>
+
+    </style>
+</resources>

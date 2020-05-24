@@ -1,0 +1,253 @@
+for i=1:3
+for j=1:254
+img1=imread(int2str(i)," (",int2str(j),").jpg");
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+>>
+for j=1:254
+img1=imread("1 (",int2str(j),").jpg");
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(j,:)=img2(:);
+A2(j,:)=img3(:);
+A3(j,:)=img4(:);
+A4(j,:)=img5(:);
+end;
+for j=1:254
+img1=imread(strcat("1 (",int2str(j),").jpg"));
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(j,:)=img2(:);
+A2(j,:)=img3(:);
+A3(j,:)=img4(:);
+A4(j,:)=img5(:);
+end;
+pkg load image
+pkg load image
+for j=1:254
+img1=imread(strcat("1 (",int2str(j),").jpg"));
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(j,:)=img2(:);
+A2(j,:)=img3(:);
+A3(j,:)=img4(:);
+A4(j,:)=img5(:);
+end;
+for j=1:254
+img1=imread(strcat("2 (",int2str(j),").jpg"));
+>>
+for j=1:254
+img1=imread(strcat("2 (",int2str(j),").jpg"));
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(end,:)=img2(:);
+A2(end,:)=img3(:);
+A3(end,:)=img4(:);
+A4(end,:)=img5(:);
+end;
+imshow(reshape(A4(1,:),224,224));
+imshow(reshape(A4(2,:),224,224));
+imshow(reshape(A4(254,:),224,224));
+imshow(reshape(A4(253,:),224,224));
+imshow(reshape(A4(252,:),224,224));
+img1=imread(strcat("1 (",int2str(j),").jpg"));
+img1=imread(strcat("1 (254).jpg"));
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(end,:)=img2(:);
+A2(end,:)=img3(:);
+A3(end,:)=img4(:);
+A4(end,:)=img5(:);
+imshow(reshape(A4(254,:),224,224));
+ for j=1:254
+img1=imread(strcat("2 (",int2str(j),").jpg"));
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(end+1,:)=img2(:);
+A2(end+1,:)=img3(:);
+A3(end+1,:)=img4(:);
+A4(end+1,:)=img5(:);
+end;
+for j=1:254
+img1=imread(strcat("3 (",int2str(j),").jpg"));
+img2=imresize(img1,[28 28]);
+img3=imresize(img1,[56 56]);
+img4=imresize(img1,[112 112]);
+img5=imresize(img1,[224 224]);
+img2=rgb2gray(img2);
+img3=rgb2gray(img3);
+img4=rgb2gray(img4);
+img5=rgb2gray(img5);
+A1(end+1,:)=img2(:);
+A2(end+1,:)=img3(:);
+A3(end+1,:)=img4(:);
+A4(end+1,:)=img5(:);
+end;
+A1=double(A1);
+A2=double(A2);
+A3=double(A3);
+for i=1:254
+B(i)=1;
+end;
+for i=255:508
+B(i)=2;
+end;
+for i=509:762
+B(i)=3;
+end;
+B=B';
+save ("H:/plan_E/train/ZZ/A1.mat", "A1");
+save ("H:/plan_E/train/ZZ/A2.mat", "A2");
+save ("H:/plan_E/train/ZZ/A3.mat", "A3");
+save ("H:/plan_E/train/ZZ/A4.mat", "A4");
+save ("H:/plan_E/train/ZZ/B.mat", "B");
+test_example_CNN
+test_example_CNN
+test_example_CNN
+test_example_CNN
+test_example_CNN
+test_example_CNN
+test_example_CNN
+exit
+# Octave 4.4.0, Tue Jul 24 22:12:13 2018 GMT <unknown@LOKESH-PC>
+help rand
+rand(5,3)
+rand(5,5,5)
+for i=1:254
+img=imread(strcat("1 (",int2str(i),").jpg"));
+img=imresize(img,[56 56]);
+rgb(i,:)=img(:);
+end;
+pkg load image 
+pkg load image 
+for i=1:254
+img=imread(strcat("1 (",int2str(i),").jpg"));
+img=imresize(img,[56 56]);
+rgb(i,:)=img(:);
+end;
+for i=1:254
+img=imread(strcat("2 (",int2str(i),").jpg"));
+img=imresize(img,[56 56]);
+rgb1(i,:)=img(:);
+end;
+for i=1:254
+img=imread(strcat("3 (",int2str(i),").jpg"));
+img=imresize(img,[56 56]);
+rgb2(i,:)=img(:);
+end;
+for i=254:508
+endl
+>>
+for i=1:254
+rgb(end+1,:)=rgb1(i,:);
+end;
+for i=1:254
+rgb(end+1,:)=rgb2(i,:);
+end;
+A2_rgb=rgb;
+save ("H:/plan_E/train/ZZ/A2_rgb.mat", "A2_rgb");
+exit
+# Octave 4.4.0, Thu Jul 26 12:15:08 2018 GMT <unknown@LOKESH-PC>
+Main
+load sdi56_test
+sdi_test(sdi,train_x,train_y);
+sdi_user("test (1).jpg");
+sdi_user("test (1).jpg");
+sdi_user("test (1).jpg");
+sdi_user("test (1).jpg");
+sdi_user("test (1).jpg");
+exit
+# Octave 4.4.0, Thu Jul 26 20:49:38 2018 GMT <unknown@LOKESH-PC>
+  img=imread(filename);
+  img=rgb2gray(img);
+  img=imresize(img,[56 56]);
+  testx(1,:)=img(:);>>
+img=imread("test (2).jpg");
+img=rgb2gray(img);
+img=imresize(img,[56 56]);
+pkg load image
+pkg load image
+tx(1,:)=img(:);
+  txx=double(reshape(tx',56,56,1))/255;
+img=imread("test (2).jpg");
+img=rgb2gray(img);
+img=imresize(img,[56 56]);
+tx(1,:)=img(:);
+tx1(1,:)=img(:);
+  txx1=double(reshape(tx1',56,56,1))/255;
+save ("H:/semi-Final - Copy/txx1.mat", "txx1");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (3).jpg");
+sdi_user("test (18).jpg");
+sdi_user("test (18).jpg");
+sdi_user("1 (23).jpg");
+sdi_user("1 (24).jpg");
+sdi_user("1 (25).jpg");
+sdi_user("2 (23).jpg");
+sdi_user("2 (24).jpg");
+sdi_user("2 (25).jpg");
+sdi_user("3 (23).jpg");
+sdi_user("3 (24).jpg");
+sdi_user("3 (25).jpg");
+sdi_user("test_melanoma (1).jpg");
+exit
+# Octave 4.4.0, Thu Jul 26 21:42:01 2018 GMT <unknown@LOKESH-PC>
+sdi_user("test_melanoma(1).jpg");
+sdi_user("test_melanoma(1).jpg");
+sdi_user("test_melanoma(2).jpg");
+sdi_user("test_nevus(2).jpg");
+sdi_user("test_nevus(1).jpg");
+exit
+# Octave 4.4.0, Fri Jul 27 02:31:00 2018 GMT <unknown@LOKESH-PC>

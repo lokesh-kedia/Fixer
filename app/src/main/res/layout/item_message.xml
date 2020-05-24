@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/header"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            tools:text="Price" />
+
+        <TextView
+            android:id="@+id/messagearea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/messageTextView"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:text="Area" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/messagearea"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000"
+            tools:text="BHK" />
+
+        <TextView
+            android:id="@+id/Owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTextView"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:text="Owner" />
+
+        <TextView
+            android:id="@+id/dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Owner"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:text="Dist" />
+
+        <ImageButton
+            android:id="@+id/shortlists"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/shortlists" />
+
+        <ImageButton
+            android:id="@+id/phonecall"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/phonecall" />
+    </RelativeLayout>
+</LinearLayout>

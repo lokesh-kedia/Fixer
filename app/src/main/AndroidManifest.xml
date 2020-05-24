@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fixer.fixer">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5314021439844328~8679195677" />
+        <meta-data
+            android:name="com.google.android.geo.api_key"
+            android:value="AIzaSyB28e5JSfMvPD21e7S8Z-Q9KuNZdB8chME" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB28e5JSfMvPD21e7S8Z-Q9KuNZdB8chME" />
+
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" />
+        <activity android:name=".complaint" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ShowCaptureActivity" />
+        <activity android:name=".ComplaintFeed" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".MyPost" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".ViewUser" />
+        <activity android:name=".ComplainMap" />
+        <activity android:name=".ImageShow" />
+        <activity android:name=".NewPost" />
+        <activity android:name=".CommentsActivity"></activity>
+    </application>
+
+</manifest>
